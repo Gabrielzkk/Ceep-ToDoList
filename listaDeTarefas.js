@@ -13,6 +13,8 @@ const criarTarefa = (event) => {
     const conteudo = `<p class="content">${valorInput}</p>`;
 
     tarefa.innerHTML = conteudo;
+
+    tarefa.appendChild(BotaoCheck());
     lista.appendChild(tarefa);
 
     input.value = "";
